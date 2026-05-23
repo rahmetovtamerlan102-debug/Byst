@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: Byst
+    runtime: python
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        value: 8618145300:AAEdkIkpY4G-a_dJx6NaD1YBHa_MQu_3ZwA
+    buildCommand: pip install --upgrade pip && pip install aiogram==3.5.0
+    startCommand: python byst.py
